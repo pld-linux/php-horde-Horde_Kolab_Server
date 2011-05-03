@@ -9,7 +9,7 @@ License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.horde.org/get/%{pearname}-%{version}.tgz
 # Source0-md5:	74b14b4d3a88ad488ad89a9082b253f2
-URL:		http://pear.horde.org/package/Horde_Kolab_Server/
+URL:		https://github.com/horde/horde/tree/master/framework/Kolab_Server/
 BuildRequires:	php-channel(pear.horde.org)
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.7.0
