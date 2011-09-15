@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - A package for manipulating the Kolab user database
 Name:		php-horde-Horde_Kolab_Server
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.horde.org/get/%{pearname}-%{version}.tgz
-# Source0-md5:	74b14b4d3a88ad488ad89a9082b253f2
+# Source0-md5:	10bcfe9555b3d413ed0b5dfa3bf91beb
 URL:		https://github.com/horde/horde/tree/master/framework/Kolab_Server/
 BuildRequires:	php-channel(pear.horde.org)
 BuildRequires:	php-packagexml2cl
@@ -38,8 +38,9 @@ In PEAR status of this package is: %{status}.
 %prep
 %pear_package_setup
 
-mv ./%{php_pear_dir}/data/Horde_Kolab_Server/TODO .
-mv docs/Horde_Kolab_Server/Horde/Kolab/Server examples
+mv docs/Horde_Kolab_Server/TODO .
+mv docs/Horde_Kolab_Server/usage.txt .
+mv docs/Horde_Kolab_Server/examples .
 
 %build
 packagexml2cl package.xml > ChangeLog
@@ -61,7 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog install.log
-%doc optional-packages.txt TODO
+%doc optional-packages.txt
+%doc TODO usage.txt
 %{php_pear_dir}/.registry/.channel.*/*.reg
 %dir %{php_pear_dir}/Horde/Kolab
 %{php_pear_dir}/Horde/Kolab/Server
