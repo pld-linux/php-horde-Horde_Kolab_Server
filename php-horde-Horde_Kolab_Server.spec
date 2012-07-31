@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - A package for manipulating the Kolab user database
 Name:		php-horde-Horde_Kolab_Server
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.horde.org/get/%{pearname}-%{version}.tgz
-# Source0-md5:	10bcfe9555b3d413ed0b5dfa3bf91beb
+# Source0-md5:	b4c266288968a17e0c99cddd640182ae
 URL:		https://github.com/horde/horde/tree/master/framework/Kolab_Server/
 BuildRequires:	php-channel(pear.horde.org)
 BuildRequires:	php-packagexml2cl
