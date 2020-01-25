@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Horde_Kolab_Server
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - A package for manipulating the Kolab user database
 Name:		php-horde-Horde_Kolab_Server
 Version:	1.0.2
