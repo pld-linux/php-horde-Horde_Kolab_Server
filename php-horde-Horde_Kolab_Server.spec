@@ -3,7 +3,7 @@
 Summary:	%{pearname} - A package for manipulating the Kolab user database
 Name:		php-horde-Horde_Kolab_Server
 Version:	1.0.2
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.horde.org/get/%{pearname}-%{version}.tgz
